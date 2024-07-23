@@ -8,6 +8,9 @@ import {Link} from "react-router-dom";
 import {AiOutlineShareAlt, AiOutlineSearch} from "react-icons/ai";
 import myContext from '../../context/data/myContext';
 
+import ShareDialogBox from '../shareDialogBox/ShareDialogBox';
+import SearchDialog from '../searchDialog/SearchDialog';
+
 export default function Nav() {
   const [openNav, setOpenNav] = React.useState(false);
   const context = useContext(myContext);
@@ -90,12 +93,14 @@ style={{color: mode === 'dark' ? 'white' : 'white'}}
 
             {/* Search Icon */}
             <div>
-              <AiOutlineSearch size={20} color="white"/>
+              {/* <AiOutlineSearch size={20} color="white"/> */}
+              <SearchDialog/>
             </div>
 
             {/* Share Icon */}
             <div className="hidden lg:block">
-              <AiOutlineShareAlt size={20} color="white"/>
+              {/* <AiOutlineShareAlt size={20} color="white"/> */}
+              <ShareDialogBox/>
             </div>
 
             {/* Admin Profile Pic */}
