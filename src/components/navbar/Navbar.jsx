@@ -5,7 +5,7 @@ import ReactLogo from '../../assets/react.svg';
 import { Navbar, Typography, IconButton, Avatar, Collapse } from "@material-tailwind/react";
 import { useContext } from "react";
 import {Link} from "react-router-dom";
-import {AiOutlineShareAlt, AiOutlineSearch} from "react-icons/ai";
+// import {AiOutlineShareAlt, AiOutlineSearch} from "react-icons/ai";
 import myContext from '../../context/data/myContext';
 
 import ShareDialogBox from '../shareDialogBox/ShareDialogBox';
@@ -109,7 +109,7 @@ style={{color: mode === 'dark' ? 'white' : 'white'}}
                 <div className="">
                   <Avatar
                     key={1}
-                    src={'https://api.dicebear.com/9.x/bottts/svg?seed=Cuddles&radius=10&backgroundType=gradientLinear&baseColor=00acc1&eyes=robocop&face=square01,square04,square03,square02&mouth=grill03,grill02&sides=antenna01,squareAssymetric&texture=circuits&textureProbability=100&top=radar,glowingBulb01&backgroundColor=b6e3f4,c0aede'}
+                    src={'/src/assets/avatar.png'}
                     alt='avatar'
                     withBorder={true}
                     className="p-0.5 text-red-500 w-10 h-10"

@@ -7,7 +7,12 @@ function HeroSection() {
     const { mode } = context;
     return (
         <section
-            style={{ background: mode === 'dark' ? 'linear-gradient(0deg, rgba(21,76,89,1) 0%, rgba(26,36,71,1) 100%)' : 'linear-gradient(0deg, rgba(34,195,185,1) 0%, rgba(61,48,164,1) 76%)'}}>
+    style={{
+        backgroundImage: `url('/src/assets/heroBanner.png'), linear-gradient(0deg, rgba(21,76,89,1) 5%, rgba(26,36,71,1) 100%)`,
+        backgroundSize: 'cover, cover', // Ensure both the image and gradient cover the section
+        backgroundPosition: 'center 27%, center', // Fix the top of the image to the top and center the gradient
+        backgroundBlendMode: 'multiply' // Blend the gradient overlay with the image
+    }}>
 
             {/* Hero Section  */}
             <div className="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
@@ -16,9 +21,7 @@ function HeroSection() {
                     <div className="text-center">
                         <div className="mb-2">
                             {/* Image  */}
-                            <div className="flex justify-center">
-                                <img src="https://cdn-icons-png.flaticon.com/128/3685/3685253.png" alt="" />
-                            </div>
+                            {/* <div className="flex justify-center"><img src="https://cdn-icons-png.flaticon.com/128/3685/3685253.png" alt="" /></div> */}
 
                             {/* Text  */}
                             <h1 className=' text-2xl text-white font-bold'>Kent&apos;s Developer Blog</h1>
@@ -27,8 +30,8 @@ function HeroSection() {
                         {/* Paragraph  */}
                         <p
                             style={{ color: mode === 'dark' ? 'white' : 'white' }}
-                            className="sm:text-1xl text-xl font-extralight sm:mx-auto ">
-                            A collection of projects and tutorials in regards to web development, software engineering, audio production, and more.
+                            className="sm:text-1xl text-xl font-extralight sm:mx-auto outline-">
+                            I&apos;m a recent graduate from NSCC&apos;s IT Programming course, and this blog is where I archive my insights into the field software development. Here, I explore a wide range of topics including full-stack web development, interact web applications, mobile apps, audio plugins, game development, and more.
                         </p>
                     </div>
 
