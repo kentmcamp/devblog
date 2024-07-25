@@ -1,6 +1,6 @@
 import React from 'react';
 
-import ReactLogo from '../../assets/react.svg';
+import WhiteKCLogo from '/kclogo02-white.png';
 
 import { Navbar, Typography, IconButton, Avatar, Collapse } from "@material-tailwind/react";
 import { useContext } from "react";
@@ -74,7 +74,7 @@ style={{color: mode === 'dark' ? 'white' : 'white'}}
 >
 
   {/* Logo Image */}
-  <img className='w-10 h-10' src={ReactLogo} alt="React Logo"/>
+  <img className='w-10 h-10' src={WhiteKCLogo} alt="React Logo"/>
 
   {/* Logo Text */}
   <span>
@@ -109,7 +109,7 @@ style={{color: mode === 'dark' ? 'white' : 'white'}}
                 <div className="">
                   <Avatar
                     key={1}
-                    src={'/src/assets/avatar.png'}
+                    src={'/avatar.png'}
                     alt='avatar'
                     withBorder={true}
                     className="p-0.5 text-red-500 w-10 h-10"

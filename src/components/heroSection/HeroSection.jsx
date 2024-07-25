@@ -6,13 +6,12 @@ function HeroSection() {
     const context = useContext(myContext);
     const { mode } = context;
     return (
-        <section
-    style={{
-        backgroundImage: `url('/src/assets/heroBanner.png'), linear-gradient(0deg, rgba(21,76,89,1) 5%, rgba(26,36,71,1) 100%)`,
-        backgroundSize: 'cover, cover', // Ensure both the image and gradient cover the section
-        backgroundPosition: 'center 27%, center', // Fix the top of the image to the top and center the gradient
-        backgroundBlendMode: 'multiply' // Blend the gradient overlay with the image
-    }}>
+        <section style = {{
+            backgroundImage: `url('/src/assets/heroBanner.png'), linear-gradient(0deg, rgba(21,76,89,1) 5%, rgba(26,36,71,1) 100%)`,
+            backgroundSize: 'cover, cover',
+            backgroundPosition: 'center 27%, center',
+            backgroundBlendMode: 'multiply'
+        }}>
 
             {/* Hero Section  */}
             <div className="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
@@ -31,7 +30,7 @@ function HeroSection() {
                         <p
                             style={{ color: mode === 'dark' ? 'white' : 'white' }}
                             className="sm:text-1xl text-xl font-extralight sm:mx-auto outline-">
-                            I&apos;m a recent graduate from NSCC&apos;s IT Programming course, and this blog is where I archive my insights into the field software development. Here, I explore a wide range of topics including full-stack web development, interact web applications, mobile apps, audio plugins, game development, and more.
+                            I&apos;m a recent graduate from NSCC&apos;s IT Programming course, and this blog is where I archive my projects and insights into the field software development. Here, I explore a wide range of topics including full-stack web development, interact web applications, mobile apps, audio plugins, game development, and more.
                         </p>
                     </div>
 

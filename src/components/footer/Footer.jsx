@@ -12,11 +12,11 @@ function Footer() {
                 <div className="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
                     {/* logo  */}
                     <img className='w-10'
-                        src="/src/assets/react.svg" alt="logo"
+                        src="/public/kclogo02-white.png" alt="logo"
                     />
                     {/* logo text  */}
                     <span className="ml-3 text-xl text-white">
-                        KentWebDev
+                        KentDevBlog - Beta Version
                     </span>
                 </div>
 
